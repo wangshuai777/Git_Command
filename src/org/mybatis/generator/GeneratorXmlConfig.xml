@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<!-- 此处配置 mysql的jdbc驱动jar包,配置为当前用户的绝对路径 -->
+	<classPathEntry
+		location="D:\workspace\myBatis\lib\mysql-connector-java-5.1.9.jar" />
+
+	<context id="MySql2Tables" targetRuntime="MyBatis3"
+		defaultModelType="flat">
+		<plugin type="org.mybatis.generator.PaginationPlugin"></plugin>
+		<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		<plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"></plugin>
+		<plugin type="org.mybatis.generator.InsertAndUpdateBatch"></plugin> 
+		<!-- <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin"> 
+			<property name="searchString" value="Example$" /> <property name="replaceString" 
+			value="Criteria" /> </plugin> -->
+		<!-- <plugin type="org.mybatis.generator.SelectByPagePlugin" /> -->
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="false" />
+		</commentGenerator>
+		<!-- 此处配置 需要生成代码的数据库 -->
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://localhost:3306/shiro?useUnicode=true&amp;characterEncoding=UTF-8"
+			userId="root" password="1989abc116" />
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+		<!-- 此处配置生成model实体文件 -->
+		<javaModelGenerator targetPackage="com.iot.ssm.po"
+			targetProject=".\src">
+			<property name="enableSubPackages" value="false" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<!-- 此处配置生成mapper.xml文件 如果原有mapper.xml文件中有自定义接口 此处需要注释掉 或者将自定义接口进行备份 -->
+		<sqlMapGenerator targetPackage="com.iot.ssm.mapper"
+			targetProject=".\src">
+			<property name="enableSubPackages" value="false" />
+		</sqlMapGenerator>
+		<!-- 配置生成DAO层代码 若不需要生成DAO层代码或者DAO存在自定义的方法 为防止被覆盖掉 此处需要注释 -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.iot.ssm.mapper"
+			targetProject=".\src">
+			<property name="enableSubPackages" value="false" />
+		</javaClientGenerator>
+		
+		
+		
+		<table tableName="sys_users" schema="" enableCountByExample="true" domainObjectName="User"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+		
+		<table tableName="sys_users_roles" schema="" enableCountByExample="true" domainObjectName="UserRole"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+		
+		<table tableName="sys_roles" schema="" enableCountByExample="true" domainObjectName="Role"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<!-- 
+		
+		<table tableName="vehicle_dic_value" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+		
+		<table tableName="vehicle_report_config" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table> 
+		
+		<table tableName="vehicle_owner" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table> 
+		<table tableName="vehicle_device" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+		
+		<table tableName="vehicle_appearance" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<table tableName="vehicle_base" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<table tableName="vehicle_brand" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<table tableName="vehicle_device_config_log" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<table tableName="vehicle_dic_type" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<table tableName="vehicle_dic_value" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<table tableName="vehicle_motor_config" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+
+		<table tableName="vehicle_motor_type" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+		
+		<table tableName="vehicle_type" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="vehicle_useinfo" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+		<table tableName="vehicle_production" schema="" enableCountByExample="true"
+			enableUpdateByExample="true" enableDeleteByExample="true"
+			enableSelectByExample="true" selectByExampleQueryId="true">
+			<generatedKey column="id" sqlStatement="Mysql" identity="true" />
+		</table>
+		-->
+		
+		
+
+	</context>
+</generatorConfiguration>
