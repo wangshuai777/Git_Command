@@ -107,7 +107,8 @@ public class Role implements Serializable {
                     try {  
                         // 获取许可 
                         semp.acquire();  
-                        System.out.println("Accessing: " + NO);  
+                        System.out.println("Accessing: " + NO);
+                        System.out.println("testGitCommand.....");
                         Thread.sleep((long) (Math.random() * 10000));  
                         // 访问完后，释放 ，如果屏蔽下面的语句，则在控制台只能打印5条记录，之后线程一直阻塞
                         semp.release();  
