@@ -1,0 +1,157 @@
+git账号：wangshuai2@cm-inv.com
+密码：1989abc116
+git登录地址：http://git.cm-pro.cn/
+git下载代码的地址：https://git.cm-pro.cn/pay/netfinworks-counter.git
+git下载代码的命令：git clone https://git.cm-pro.cn/pay/netfinworks-counter.git
+
+OA账号：wangshuai
+密码：lejia123
+登入地址：http://oa.lejiapay.com:8088/login.jsp;jsessionid=2AA3D05686C4ADA911679AAB47CC1A38
+禅道URL：bug.cm-pro.cn/index.php
+禅道用户名：wangshuai
+禅道密码：123abc..
+com.inv.pay.core.controller
+com.inv.pay.core.controller
+com.inv.pay.core.dao
+Ctrl+shift+O
+ResultSet rs=null;
+Statement stmt=null;
+Connection conn=null;
+try{
+
+}catch(Exception e){
+  //TODO异常处理
+}finally{
+   if(rs!=null){
+       try{
+          rs.close();
+        }catch(SQLException e){
+         //TODO异常处理
+      }
+    }
+
+   if(stmt!=null){
+       try{
+          stmt.close();
+        }catch(SQLException e){
+         //TODO
+       }
+     }
+   if(conn!=null){
+       try{
+          conn.close();
+         }catch(SQLException e){
+        }
+    }
+}
+public int[] getPackets(){
+
+    return copyArray(packets,offset);
+
+public Object clone(){
+
+   try{
+      CounterSet set=(CounterSet)super.clone(); 
+    }catch(CloneNotSupportedException){
+        throw new InternalError("Unexpected CloneNotSUpportedException:"+e.getMessage());
+
+   }
+   
+  PrintWriter pw=new PrintWriter();
+  history.back();history.go(-1);history.back();history.go(-1);
+  history.back();history.go(-1);
+
+}
+
+}
+
+Iam@CMP17
+error_code,error_message
+error_code,error_message
+error_code,error_message
+utf-8,gbk,gb2312,iso8859-1
+VPN新密码：qazWSX1@
+
+wangshuai
+
+1qaz@WSX
+
+
+vpn.ehangtian.com
+
+6011
+航天电子支付系统
+航天支付首页网址：https://yfk.ehangtian.com
+
+预付卡
+：172.16.5.4 
+预付卡后台 htdz/internal_tomcat-7.0.70 https://172.16.5.4:9044/eht_core/
+172.16.1.4 
+预付卡前台 htdz/apache-tomcat-7.0.70 http://www.ehangtian.com
+?172.16.1.24
+商户  htdz/apache-tomcat-7.0.70 https://www.ehangtian.com:8080/eht_mer/toLogin.do
+
+name:htyw
+pswd:HtdzTest110
+
+pswd:Htdzgood9
+
+支付系统服务器数据库信息：
+
+1、5、开发三台机器
+10.16.199.70
+10.16.199.71
+10.16.199.72
+root
+zmwy@123
+2、数据库  10.16.199.72   root mysql
+
+支付系统后台管理登录信息：
+
+host文件配置：
+
+10.16.199.70  node1  namenode1  portal.epay.com  control.epay.com  gate.lejiapay.com  payintra.epay.com  ttserver.epay.com
+10.16.199.71 node2
+10.16.199.72 node3
+
+
+http://control.epay.com/uni-login/login_hk
+
+用户名：super
+密码：netfinworks
+
+
+
+http://control.epay.com/uni-login/login?sysCode=BASIS&returnUrl=http%3A%2F%2Fcontrol.epay.com%2Fbasis%2Findex.htm
+http://portal.epay.com/ucenter/login_hk/personal.htm
+
+
+
+备付金开发资料：
+
+后台链接：http://10.251.1.3:9048/eht_bfj/toLogin.do
+用户名：wangshuai
+密码：aa000000
+
+http://fgcx.bjcourt.gov.cn:4601/law?fn=chl398s899.txt
+
+http://m.sodocs.net/doc/10133e01f524ccbff12184b7.html
+支付机构备付金统计报表及其说明
+其中表示 表2-1由备付金银行填制
+https://wenku.baidu.com/view/10133e01f524ccbff12184b7.html?from=search
+https://wenku.baidu.com/view/33536320f121dd36a22d8212.html?from=search
+http://m.sodocs.net/doc/650e02f40029bd64793e2c37-2.html
+
+chenwei
+@WSX3edc
+预付卡生产数据库：
+IP:192.168.6.3
+密码：Yf806K8d1I35
+
+
+
+生产---------------------------------------------------------
+#database.jdbc.url=jdbc:oracle:thin:@192.168.6.3:1521:htdz
+#database.jdbc.username=usryfk
+#database.jdbc.password=Yf806K8d1I35
+
